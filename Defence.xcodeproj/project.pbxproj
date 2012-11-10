@@ -133,13 +133,14 @@
 		02413303164E865C00FBD286 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02413302164E865C00FBD286 /* AppDelegate.m */; };
 		02413306164E865C00FBD286 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02413305164E865C00FBD286 /* HelloWorldLayer.m */; };
 		02413309164E865C00FBD286 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02413308164E865C00FBD286 /* IntroLayer.m */; };
-		02CFF99D164E8A6F00035B59 /* StartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CFF99C164E8A6F00035B59 /* StartScene.m */; };
+		02CFF99D164E8A6F00035B59 /* StartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CFF99C164E8A6F00035B59 /* StartLayer.m */; };
 		02CFF9A1164E8B6900035B59 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CFF9A0164E8B6900035B59 /* GameScene.m */; };
 		02CFF9A7164E902600035B59 /* TouchLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CFF9A6164E902600035B59 /* TouchLayer.m */; };
 		02D1CBD8164E9225003A031E /* ShipsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D1CBD7164E9225003A031E /* ShipsLayer.m */; };
 		02D1CBDB164E9292003A031E /* WarShip.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D1CBDA164E9292003A031E /* WarShip.m */; };
 		02D1CBDE164E94F3003A031E /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D1CBDD164E94F3003A031E /* GameLayer.m */; };
 		02D1CBE0164E96DE003A031E /* readMe in Resources */ = {isa = PBXBuildFile; fileRef = 02D1CBDF164E96DE003A031E /* readMe */; };
+		02D1CC0C164EB29F003A031E /* mainBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02D1CC0B164EB29F003A031E /* mainBackground.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -405,8 +406,8 @@
 		02413305164E865C00FBD286 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		02413307164E865C00FBD286 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		02413308164E865C00FBD286 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
-		02CFF99B164E8A6F00035B59 /* StartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartScene.h; sourceTree = "<group>"; };
-		02CFF99C164E8A6F00035B59 /* StartScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartScene.m; sourceTree = "<group>"; };
+		02CFF99B164E8A6F00035B59 /* StartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartLayer.h; sourceTree = "<group>"; };
+		02CFF99C164E8A6F00035B59 /* StartLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartLayer.m; sourceTree = "<group>"; };
 		02CFF99F164E8B6900035B59 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		02CFF9A0164E8B6900035B59 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		02CFF9A5164E902600035B59 /* TouchLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchLayer.h; sourceTree = "<group>"; };
@@ -418,6 +419,7 @@
 		02D1CBDC164E94F3003A031E /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
 		02D1CBDD164E94F3003A031E /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 		02D1CBDF164E96DE003A031E /* readMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readMe; sourceTree = "<group>"; };
+		02D1CC0B164EB29F003A031E /* mainBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mainBackground.jpg; path = Resources/mainBackground.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -476,8 +478,8 @@
 		02413189164E865400FBD286 /* Defence */ = {
 			isa = PBXGroup;
 			children = (
-				02CFF99B164E8A6F00035B59 /* StartScene.h */,
-				02CFF99C164E8A6F00035B59 /* StartScene.m */,
+				02CFF99B164E8A6F00035B59 /* StartLayer.h */,
+				02CFF99C164E8A6F00035B59 /* StartLayer.m */,
 				02CFF9A5164E902600035B59 /* TouchLayer.h */,
 				02CFF9A6164E902600035B59 /* TouchLayer.m */,
 				02D1CBD6164E9225003A031E /* ShipsLayer.h */,
@@ -505,6 +507,7 @@
 		0241318A164E865400FBD286 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				02D1CC0B164EB29F003A031E /* mainBackground.jpg */,
 				0241318B164E865400FBD286 /* Default.png */,
 				0241318D164E865400FBD286 /* Default-Landscape~ipad.png */,
 				0241318F164E865400FBD286 /* fps_images.png */,
@@ -929,6 +932,7 @@
 				024131A3164E865500FBD286 /* iTunesArtwork in Resources */,
 				024132E1164E865B00FBD286 /* ChangeLog in Resources */,
 				02D1CBE0164E96DE003A031E /* readMe in Resources */,
+				02D1CC0C164EB29F003A031E /* mainBackground.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1043,7 +1047,7 @@
 				02413303164E865C00FBD286 /* AppDelegate.m in Sources */,
 				02413306164E865C00FBD286 /* HelloWorldLayer.m in Sources */,
 				02413309164E865C00FBD286 /* IntroLayer.m in Sources */,
-				02CFF99D164E8A6F00035B59 /* StartScene.m in Sources */,
+				02CFF99D164E8A6F00035B59 /* StartLayer.m in Sources */,
 				02CFF9A1164E8B6900035B59 /* GameScene.m in Sources */,
 				02CFF9A7164E902600035B59 /* TouchLayer.m in Sources */,
 				02D1CBD8164E9225003A031E /* ShipsLayer.m in Sources */,
