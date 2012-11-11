@@ -13,5 +13,41 @@
 
 
 @implementation GameLayer
++(CCScene *) scene
+{
+	// 'scene' is an autorelease object.
+	CCScene *scene = [CCScene node];
+	
+	// 'layer' is an autorelease object.
+	GameLayer *layer = [GameLayer node];
+	
+	// add layer as a child to scene
+	[scene addChild: layer];
+	
+	// return the scene
+	return scene;
+}
 
+-(id)init
+{
+    if(self = [super init])
+    {
+        CCLabelTTF *label = [CCLabelTTF labelWithString:@"GameLayer" fontName:@"Marker Felt" fontSize:64];
+        CGSize size = [[CCDirector sharedDirector]winSize];
+        label.position = CGPointMake(size.width/2, size.height/2+100);
+        
+        [self addChild:label];
+        
+        touchLayer = [[TouchLayer alloc]init ];
+        [self addChild:touchLayer];
+        touchLayer.tag = 2;
+                             
+    }
+    return  self;
+}
+-(void)dealloc
+{
+    [touchLayer release];
+    [super dealloc];
+}
 @end

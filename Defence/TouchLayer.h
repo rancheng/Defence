@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-
+#import "CCTouchDispatcher.h"
 @interface TouchLayer : CCLayer {
     
 }
-
+-(id)init;
+-(void)registerWithTouchDispatcher;
+-(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+-(void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
+-(CGPoint) locationFromTouches:(NSSet *)touches;
 @end

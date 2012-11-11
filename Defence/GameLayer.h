@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "TouchLayer.h"
 
 @interface GameLayer : CCLayer {
+    TouchLayer *touchLayer;
     
 }
-
++(CCScene*)scene;
 @end

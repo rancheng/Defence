@@ -16,7 +16,7 @@
 #import "cocos2d.h"
 
 // HelloWorldLayer
-@interface StartLayer : CCLayer <GKAchievementViewControllerDelegate, GKLeaderboardViewControllerDelegate>
+@interface StartLayer : CCLayer 
 {
 }
 

@@ -7,13 +7,14 @@
 //
 
 #import "StartLayer.h"
+#import "GameLayer.h"
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
 
 #pragma mark - StartLayer
 
-// HelloWorldLayer implementation
+// StartLayer implementation
 @implementation StartLayer
 
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
@@ -63,39 +64,11 @@
         
 		[CCMenuItemFont setFontSize:28];
 		
-		// Achievement Menu Item using blocks
-		CCMenuItem *itemAchievement = [CCMenuItemFont itemWithString:@"Achievements" block:^(id sender) {
-			
-			
-			GKAchievementViewController *achivementViewController = [[GKAchievementViewController alloc] init];
-			achivementViewController.achievementDelegate = self;
-			
-			AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-			
-			[[app navController] presentModalViewController:achivementViewController animated:YES];
-			
-			[achivementViewController release];
-		}
-									   ];
         
-		// Leaderboard Menu Item using blocks
-		CCMenuItem *itemLeaderboard = [CCMenuItemFont itemWithString:@"Leaderboard" block:^(id sender) {
-			
-			
-			GKLeaderboardViewController *leaderboardViewController = [[GKLeaderboardViewController alloc] init];
-			leaderboardViewController.leaderboardDelegate = self;
-			
-			AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-			
-			[[app navController] presentModalViewController:leaderboardViewController animated:YES];
-			
-			[leaderboardViewController release];
-		}
-									   ];
 		CCMenuItem *start = [CCMenuItemFont itemWithString:@"start" target:self selector:@selector(start:)];
         CCMenuItem *option = [CCMenuItemFont itemWithString:@"option" target:self selector:@selector(option:)];
         CCMenuItem *aboutUs = [CCMenuItemFont itemWithString:@"about us" target:self selector:@selector(aboutUs:)];
-		CCMenu *menu = [CCMenu menuWithItems:start,option,aboutUs,itemAchievement, itemLeaderboard, nil];
+		CCMenu *menu = [CCMenu menuWithItems:start,option,aboutUs, nil];
 		
 		[menu alignItemsVerticallyWithPadding:20];
 		[menu setPosition:ccp( size.width/2, size.height/2 - 50)];
@@ -118,22 +91,9 @@
 	[super dealloc];
 }
 
-#pragma mark GameKit delegate
-
--(void) achievementViewControllerDidFinish:(GKAchievementViewController *)viewController
-{
-	AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-	[[app navController] dismissModalViewControllerAnimated:YES];
-}
-
--(void) leaderboardViewControllerDidFinish:(GKLeaderboardViewController *)viewController
-{
-	AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-	[[app navController] dismissModalViewControllerAnimated:YES];
-}
 -(void) start:(id)sender
 {
-    NSLog(@"start");
+    [[CCDirector sharedDirector]replaceScene:[GameLayer scene]];
 }
 -(void) option:(id)sender
 {

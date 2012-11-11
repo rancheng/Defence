@@ -14,5 +14,43 @@
 
 
 @implementation TouchLayer
+-(id)init
+{
+    if(self = [super init])
+    {
+        CCLabelTTF *label = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt"     fontSize:64];
+        CGSize size = [[CCDirector sharedDirector] winSize];
+        
+        label.position = CGPointMake(size.width/2, size.height/2);
+        [self addChild:label];
+        label.tag = 1;			
+        self.isTouchEnabled = YES;
+    }
+    return self;
+}
 
+-(CGPoint) locationFromTouches:(NSSet *)touches
+{
+    UITouch *touch = [touches anyObject];
+    CGPoint touchLocation = [touch locationInView:[touch view]];
+    return [[CCDirector sharedDirector]convertToGL:touchLocation];
+}
+-(void) ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    CGPoint where = [self locationFromTouches:touches];
+    
+    CCParticleSystem* particle = [CCParticleSystemQuad particleWithFile:@"pp.plist"];
+    particle.positionType = kCCPositionTypeFree;
+    particle.position = where;
+    [self addChild:particle z:1];
+}
+-(void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
+{
+    CGPoint where = [self locationFromTouches:touches];
+    
+    CCParticleSystem* particle = [CCParticleSystemQuad particleWithFile:@"pp.plist"];
+    particle.positionType = kCCPositionTypeFree;
+    particle.position = where;
+    [self addChild:particle z:1];
+}
 @end
