@@ -67,7 +67,7 @@
 	<key>sourcePositiony</key>
 	<real>262.7999877929688</real>
 	<key>speed</key>
-	<integer>178</integer>
+	<integer>0</integer>
 	<key>speedVariance</key>
 	<integer>30</integer>
 	<key>startColorAlpha</key>

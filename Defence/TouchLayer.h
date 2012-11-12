@@ -13,8 +13,6 @@
     
 }
 -(id)init;
--(void)registerWithTouchDispatcher;
 -(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 -(void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
--(CGPoint) locationFromTouches:(NSSet *)touches;
 @end

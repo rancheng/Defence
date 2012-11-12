@@ -38,16 +38,11 @@
         
         [self addChild:label];
         
-        touchLayer = [[TouchLayer alloc]init ];
+        touchLayer = [TouchLayer node];
         [self addChild:touchLayer];
         touchLayer.tag = 2;
                              
     }
     return  self;
-}
--(void)dealloc
-{
-    [touchLayer release];
-    [super dealloc];
 }
 @end
