@@ -141,6 +141,8 @@
 		02D1CBDE164E94F3003A031E /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D1CBDD164E94F3003A031E /* GameLayer.m */; };
 		02D1CBE0164E96DE003A031E /* readMe in Resources */ = {isa = PBXBuildFile; fileRef = 02D1CBDF164E96DE003A031E /* readMe */; };
 		02D1CC0C164EB29F003A031E /* mainBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02D1CC0B164EB29F003A031E /* mainBackground.jpg */; };
+		A4EA129F1671FAAB00ADABD5 /* RankList.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EA129E1671FAAB00ADABD5 /* RankList.m */; };
+		A4EA12A31671FB0800ADABD5 /* RecordInfor.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EA12A21671FB0800ADABD5 /* RecordInfor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -419,6 +421,10 @@
 		02D1CBDD164E94F3003A031E /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 		02D1CBDF164E96DE003A031E /* readMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readMe; sourceTree = "<group>"; };
 		02D1CC0B164EB29F003A031E /* mainBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mainBackground.jpg; path = Resources/mainBackground.jpg; sourceTree = "<group>"; };
+		A4EA129D1671FAAB00ADABD5 /* RankList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankList.h; sourceTree = "<group>"; };
+		A4EA129E1671FAAB00ADABD5 /* RankList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankList.m; sourceTree = "<group>"; };
+		A4EA12A11671FB0800ADABD5 /* RecordInfor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordInfor.h; sourceTree = "<group>"; };
+		A4EA12A21671FB0800ADABD5 /* RecordInfor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordInfor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -497,6 +503,10 @@
 				0241318A164E865400FBD286 /* Resources */,
 				024131A4164E865500FBD286 /* libs */,
 				024132FD164E865C00FBD286 /* Supporting Files */,
+				A4EA129D1671FAAB00ADABD5 /* RankList.h */,
+				A4EA12A11671FB0800ADABD5 /* RecordInfor.h */,
+				A4EA12A21671FB0800ADABD5 /* RecordInfor.m */,
+				A4EA129E1671FAAB00ADABD5 /* RankList.m */,
 			);
 			path = Defence;
 			sourceTree = "<group>";
@@ -1051,6 +1061,8 @@
 				02D1CBD8164E9225003A031E /* ShipsLayer.m in Sources */,
 				02D1CBDB164E9292003A031E /* WarShip.m in Sources */,
 				02D1CBDE164E94F3003A031E /* GameLayer.m in Sources */,
+				A4EA129F1671FAAB00ADABD5 /* RankList.m in Sources */,
+				A4EA12A31671FB0800ADABD5 /* RecordInfor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

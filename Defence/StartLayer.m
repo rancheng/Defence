@@ -8,6 +8,7 @@
 
 #import "StartLayer.h"
 #import "GameLayer.h"
+#import "RankList.h"
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
@@ -97,7 +98,7 @@
 }
 -(void) option:(id)sender
 {
-    NSLog(@"option");
+    [[CCDirector sharedDirector]replaceScene:[RankList scene]];
 }
 -(void) aboutUs:(id)sender
 {
