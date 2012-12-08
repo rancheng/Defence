@@ -143,6 +143,7 @@
 		02D1CC0C164EB29F003A031E /* mainBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02D1CC0B164EB29F003A031E /* mainBackground.jpg */; };
 		A4EA129F1671FAAB00ADABD5 /* RankList.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EA129E1671FAAB00ADABD5 /* RankList.m */; };
 		A4EA12A31671FB0800ADABD5 /* RecordInfor.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EA12A21671FB0800ADABD5 /* RecordInfor.m */; };
+		F6A4B4EB1672E9C0007EA9CA /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4B4EA1672E9C0007EA9CA /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -425,6 +426,9 @@
 		A4EA129E1671FAAB00ADABD5 /* RankList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankList.m; sourceTree = "<group>"; };
 		A4EA12A11671FB0800ADABD5 /* RecordInfor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordInfor.h; sourceTree = "<group>"; };
 		A4EA12A21671FB0800ADABD5 /* RecordInfor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordInfor.m; sourceTree = "<group>"; };
+		F6A4B4E91672E9C0007EA9CA /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F6A4B4EA1672E9C0007EA9CA /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F6A4B4EC1672EBC3007EA9CA /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -488,6 +492,8 @@
 				02CFF9A5164E902600035B59 /* TouchLayer.h */,
 				02CFF9A6164E902600035B59 /* TouchLayer.m */,
 				02D1CBD6164E9225003A031E /* ShipsLayer.h */,
+				F6A4B4E91672E9C0007EA9CA /* RootViewController.h */,
+				F6A4B4EA1672E9C0007EA9CA /* RootViewController.m */,
 				02D1CBD7164E9225003A031E /* ShipsLayer.m */,
 				02D1CBD9164E9292003A031E /* WarShip.h */,
 				02D1CBDA164E9292003A031E /* WarShip.m */,
@@ -497,16 +503,17 @@
 				02413302164E865C00FBD286 /* AppDelegate.m */,
 				02413304164E865C00FBD286 /* HelloWorldLayer.h */,
 				02413305164E865C00FBD286 /* HelloWorldLayer.m */,
+				F6A4B4EC1672EBC3007EA9CA /* GameConfig.h */,
+				A4EA129D1671FAAB00ADABD5 /* RankList.h */,
+				A4EA12A11671FB0800ADABD5 /* RecordInfor.h */,
+				A4EA12A21671FB0800ADABD5 /* RecordInfor.m */,
+				A4EA129E1671FAAB00ADABD5 /* RankList.m */,
 				02413307164E865C00FBD286 /* IntroLayer.h */,
 				02413308164E865C00FBD286 /* IntroLayer.m */,
 				02D1CBDF164E96DE003A031E /* readMe */,
 				0241318A164E865400FBD286 /* Resources */,
 				024131A4164E865500FBD286 /* libs */,
 				024132FD164E865C00FBD286 /* Supporting Files */,
-				A4EA129D1671FAAB00ADABD5 /* RankList.h */,
-				A4EA12A11671FB0800ADABD5 /* RecordInfor.h */,
-				A4EA12A21671FB0800ADABD5 /* RecordInfor.m */,
-				A4EA129E1671FAAB00ADABD5 /* RankList.m */,
 			);
 			path = Defence;
 			sourceTree = "<group>";
@@ -1063,6 +1070,7 @@
 				02D1CBDE164E94F3003A031E /* GameLayer.m in Sources */,
 				A4EA129F1671FAAB00ADABD5 /* RankList.m in Sources */,
 				A4EA12A31671FB0800ADABD5 /* RecordInfor.m in Sources */,
+				F6A4B4EB1672E9C0007EA9CA /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
