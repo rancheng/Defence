@@ -26,9 +26,13 @@
 @property bool isEmpty;
 @property NSString* userName;
 
--(NSString* ) getUserName;
+
+-(void) clear;
 
 -(void) setScore:(NSString* )newUserName create: (int)newScore andTime:(int) completeTime;
+
+-(void) encodeWithCoder:(NSCoder * )encoder;
+-(void) initWithCoder:(NSCoder * )decoder;
 
 -(BOOL) isNewRecordHigher: (int)newScore;
 

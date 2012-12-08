@@ -141,7 +141,9 @@
 		02D1CBDE164E94F3003A031E /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D1CBDD164E94F3003A031E /* GameLayer.m */; };
 		02D1CBE0164E96DE003A031E /* readMe in Resources */ = {isa = PBXBuildFile; fileRef = 02D1CBDF164E96DE003A031E /* readMe */; };
 		02D1CC0C164EB29F003A031E /* mainBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02D1CC0B164EB29F003A031E /* mainBackground.jpg */; };
-		A4EA129F1671FAAB00ADABD5 /* RankList.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EA129E1671FAAB00ADABD5 /* RankList.m */; };
+		A410D25A16735154006963E3 /* RankData.m in Sources */ = {isa = PBXBuildFile; fileRef = A410D25916735154006963E3 /* RankData.m */; };
+		A410D25E1673518C006963E3 /* RankScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A410D25D1673518C006963E3 /* RankScene.m */; };
+		A410D2611673541D006963E3 /* MyFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A410D2601673541D006963E3 /* MyFileManager.m */; };
 		A4EA12A31671FB0800ADABD5 /* RecordInfor.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EA12A21671FB0800ADABD5 /* RecordInfor.m */; };
 /* End PBXBuildFile section */
 
@@ -421,8 +423,12 @@
 		02D1CBDD164E94F3003A031E /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 		02D1CBDF164E96DE003A031E /* readMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readMe; sourceTree = "<group>"; };
 		02D1CC0B164EB29F003A031E /* mainBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mainBackground.jpg; path = Resources/mainBackground.jpg; sourceTree = "<group>"; };
-		A4EA129D1671FAAB00ADABD5 /* RankList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankList.h; sourceTree = "<group>"; };
-		A4EA129E1671FAAB00ADABD5 /* RankList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankList.m; sourceTree = "<group>"; };
+		A410D25816735154006963E3 /* RankData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankData.h; sourceTree = "<group>"; };
+		A410D25916735154006963E3 /* RankData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankData.m; sourceTree = "<group>"; };
+		A410D25C1673518C006963E3 /* RankScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankScene.h; sourceTree = "<group>"; };
+		A410D25D1673518C006963E3 /* RankScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankScene.m; sourceTree = "<group>"; };
+		A410D25F1673541D006963E3 /* MyFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFileManager.h; sourceTree = "<group>"; };
+		A410D2601673541D006963E3 /* MyFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFileManager.m; sourceTree = "<group>"; };
 		A4EA12A11671FB0800ADABD5 /* RecordInfor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordInfor.h; sourceTree = "<group>"; };
 		A4EA12A21671FB0800ADABD5 /* RecordInfor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordInfor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -485,6 +491,10 @@
 			children = (
 				02CFF99B164E8A6F00035B59 /* StartLayer.h */,
 				02CFF99C164E8A6F00035B59 /* StartLayer.m */,
+				A410D25816735154006963E3 /* RankData.h */,
+				A410D25916735154006963E3 /* RankData.m */,
+				A410D25C1673518C006963E3 /* RankScene.h */,
+				A410D25D1673518C006963E3 /* RankScene.m */,
 				02CFF9A5164E902600035B59 /* TouchLayer.h */,
 				02CFF9A6164E902600035B59 /* TouchLayer.m */,
 				02D1CBD6164E9225003A031E /* ShipsLayer.h */,
@@ -503,10 +513,10 @@
 				0241318A164E865400FBD286 /* Resources */,
 				024131A4164E865500FBD286 /* libs */,
 				024132FD164E865C00FBD286 /* Supporting Files */,
-				A4EA129D1671FAAB00ADABD5 /* RankList.h */,
 				A4EA12A11671FB0800ADABD5 /* RecordInfor.h */,
 				A4EA12A21671FB0800ADABD5 /* RecordInfor.m */,
-				A4EA129E1671FAAB00ADABD5 /* RankList.m */,
+				A410D25F1673541D006963E3 /* MyFileManager.h */,
+				A410D2601673541D006963E3 /* MyFileManager.m */,
 			);
 			path = Defence;
 			sourceTree = "<group>";
@@ -1061,8 +1071,10 @@
 				02D1CBD8164E9225003A031E /* ShipsLayer.m in Sources */,
 				02D1CBDB164E9292003A031E /* WarShip.m in Sources */,
 				02D1CBDE164E94F3003A031E /* GameLayer.m in Sources */,
-				A4EA129F1671FAAB00ADABD5 /* RankList.m in Sources */,
 				A4EA12A31671FB0800ADABD5 /* RecordInfor.m in Sources */,
+				A410D25A16735154006963E3 /* RankData.m in Sources */,
+				A410D25E1673518C006963E3 /* RankScene.m in Sources */,
+				A410D2611673541D006963E3 /* MyFileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,15 +1,15 @@
 //
-//  RankList.m
+//  RankScene.m
 //  Defence
 //
-//  Created by Nick Liu on 12-12-7.
+//  Created by Nick Liu on 12-12-8.
 //
 //
-#import "AppDelegate.h"
-#import "RankList.h"
 
+#import "RankScene.h"
 
-@implementation RankList
+@implementation RankScene
+
 
 +(CCScene *) scene
 {
@@ -17,7 +17,7 @@
 	CCScene *scene = [CCScene node];
 	
 	// 'layer' is an autorelease object.
-	RankList *layer = [RankList node];
+	RankScene *layer = [RankScene node];
 	
 	// add layer as a child to scene
 	[scene addChild: layer];
@@ -26,15 +26,6 @@
 	return scene;
 }
 
-+(bool)judgeRecord:(int)marks
-{
-    return true;
-}
-
--(RecordInfor *)getRankList
-{
-    return firstPlace[0];
-}
 
 -(id) init
 {
@@ -42,20 +33,6 @@
         
         CGSize size = [[CCDirector sharedDirector] winSize];
         
-        /////data to be displayed
-        
-        
-        
-        for (int ix = 0; ix < 5; ix++)
-        {
-            firstPlace[ix] = [[RecordInfor alloc] init];
-            
-            //set score from the storage disk.
-            //firstPlace[ix] setScore:<#(NSString *)#> create:<#(int)#> andTime:<#(int)#>
-        }
-        
-        
-        /////
         CCSprite *background;
         if( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ) {
             background = [CCSprite spriteWithFile:@"Default.png"];
@@ -74,11 +51,11 @@
 		[self addChild: label];
 		
         
-        //head line 
+        //head line
         CCLabelTTF * name = [CCLabelTTF labelWithString:@"Name" fontName:@"Marker Felt" fontSize: 48];
         name.position = ccp(200, size.height/2 +150);
         [self addChild: name];
-     
+        
         CCLabelTTF * score = [CCLabelTTF labelWithString:@"Score" fontName:@"Marker Felt" fontSize: 48];
         score.position = ccp( size.width/2, size.height/2 +150);
         [self addChild: score];
@@ -86,34 +63,35 @@
         CCLabelTTF * finishTime = [CCLabelTTF labelWithString:@"finishTime" fontName:@"Marker Felt" fontSize: 48];
         finishTime.position = ccp(size.width- 300, size.height/2 +150);
         [self addChild: finishTime];
-        
+       
         ///data below
         
-        for (int ix = 0; ix < 5; ix++)
+        for (int ix = 0; ix < NumInRank; ix++)
         {
             
-            NSString * nameString = [firstPlace[ix] getUserName];
-            NSString * highScore = [NSString stringWithFormat:@"%i",[firstPlace[ix] score]];//itoa
-            NSString * newTime = [NSString stringWithFormat:@"%i",[firstPlace[ix] time]];
+            NSString * nameString = [[RankData getRankList: ix] userName];
+            NSString * highScore = [NSString stringWithFormat:@"%i",[[RankData getRankList: ix] score]];//itoa
+            NSString * newTime = [NSString stringWithFormat:@"%i",[[RankData getRankList: ix] time]];
             
-            CCLabelTTF * name = [CCLabelTTF labelWithString: nameString fontName:@"Marker Felt" fontSize: 36];
-            name.position = ccp(200, size.height/2 -48 * (ix -1));
-            [self addChild: name];
+           CCLabelTTF * nameInfor = [CCLabelTTF labelWithString: nameString fontName:@"Marker Felt" fontSize: 36];
+            nameInfor.position = ccp(200, size.height/2 -48 * (ix -1));
+            [self addChild: nameInfor];
+        
+            CCLabelTTF * scoreInfor = [CCLabelTTF labelWithString: highScore fontName:@"Marker Felt" fontSize: 36];
+            scoreInfor.position = ccp( size.width/2, size.height/2 - 48 * (ix- 1));
+            [self addChild: scoreInfor];
             
-            CCLabelTTF * score = [CCLabelTTF labelWithString:highScore fontName:@"Marker Felt" fontSize: 36];
-            score.position = ccp( size.width/2, size.height/2 - 48 * (ix- 1));
-            [self addChild: score];
-            
-            CCLabelTTF * finishTime = [CCLabelTTF labelWithString:newTime fontName:@"Marker Felt" fontSize: 36];
-            finishTime.position = ccp(size.width- 300, size.height/2 - 48 * (ix- 1));
-            [self addChild: finishTime];
+            CCLabelTTF * timeInfor = [CCLabelTTF labelWithString: newTime fontName:@"Marker Felt" fontSize: 36];
+            timeInfor.position = ccp(size.width- 300, size.height/2 - 48 * (ix- 1));
+            [self addChild: timeInfor];
+         
         }
         
         
         ///menu about back to main and so on....
 		[CCMenuItemFont setFontSize:28];
 		
-
+        
         CCMenuItem *backToMain = [CCMenuItemFont itemWithString:@"Main Menu" target:self selector:@selector(backToMain:)];
 		CCMenu *menu = [CCMenu menuWithItems:backToMain, nil];
 		
@@ -131,6 +109,7 @@
 	return self;
 }
 
+
 -(void) start:(id)sender
 {
     NSLog(@"hahahahah");
@@ -145,18 +124,5 @@
     [[CCDirector sharedDirector] replaceScene:[StartLayer scene]];
 }
 
-
-
-//save to disk
-
--(BOOL)saveToDisk
-{
-    if(true//success to save
-       )
-    {
-        return true;
-    }
-    return false;
-}
 
 @end

@@ -38,6 +38,16 @@
     return self;
 }
 
+///////clear method
+-(void)clear
+{
+    score = 0;
+    userName = @"Nobody";
+    time = 0;
+    isEmpty = true;
+}
+
+
 //////compare
 -(BOOL)isNewRecordHigher:(int)newScore
 {
@@ -49,14 +59,28 @@
     return false;
 }
 
-
-////
--(NSString* )getUserName
+-(void) encodeWithCoder:(NSCoder *)encoder
 {
+    [encoder encodeInt32:score forKey:@"score"];
+    [encoder encodeInt32: time forKey:@"time"];
     
-    return userName;
+    [encoder encodeBool:isEmpty forKey:@"isEmpty"];
+
+    [encoder encodeObject:userName forKey:@"userName"];
 }
 
+-(id) initWithCoder: (NSCoder * )decoder
+{
+    score = [decoder decodeInt32ForKey:@"score"];
+    time = [decoder decodeInt32ForKey:@"time"];
+    
+    isEmpty = [decoder decodeBoolForKey:@"isEmpty"];
+    
+    userName = [[decoder decodeObjectForKey:@"userName"] retain];
+    
+    
+    return self;
+}
 
 
 @end
