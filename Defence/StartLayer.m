@@ -5,9 +5,12 @@
 //  Created by  亓庆国 on 12-11-10.
 //  Copyright 2012年 __MyCompanyName__. All rights reserved.
 //
+//  exit method added by liushengxina 12-12-08
+///
 
 #import "StartLayer.h"
 #import "GameLayer.h"
+#import "RankScene.h"
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
@@ -65,6 +68,8 @@
 		
         
         
+        [RankData initialize];
+        [RankData loadRecord];
 		[CCMenuItemFont setFontSize:28];
 
         
@@ -106,9 +111,17 @@
 -(void) option:(id)sender
 {
     NSLog(@"option");
+    [[CCDirector sharedDirector]replaceScene:[RankScene scene]];
 }
 -(void) aboutUs:(id)sender
 {
     NSLog(@"aboutUs");
+}
+
+-(void) exitGame:(id)sender
+{
+    [RankData saveRecord];
+   // [[CCDirector sharedDirector] end];
+    NSLog(@"exit successfully!");
 }
 @end
