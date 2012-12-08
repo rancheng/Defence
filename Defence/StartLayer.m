@@ -10,7 +10,10 @@
 
 #import "StartLayer.h"
 #import "GameLayer.h"
+<<<<<<< HEAD
+=======
 #import "RankScene.h"
+>>>>>>> master
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
@@ -66,21 +69,34 @@
         label.color = color;
         [self addChild: label];
 		
+        ////[RankList readFromDisk];
         
         
+        ////
         [RankData initialize];
         [RankData loadRecord];
+        
+        
+        ///NSLog(@"%@",[RankList firstPlace]);
+        
 		[CCMenuItemFont setFontSize:28];
 
         
 		CCMenuItem *start = [CCMenuItemFont itemWithString:@"start" target:self selector:@selector(start:)];
         CCMenuItem *option = [CCMenuItemFont itemWithString:@"option" target:self selector:@selector(option:)];
         CCMenuItem *aboutUs = [CCMenuItemFont itemWithString:@"about us" target:self selector:@selector(aboutUs:)];
+<<<<<<< HEAD
       
         
 		CCMenu *menu = [CCMenu menuWithItems:start,option,aboutUs, nil];
 
         
+=======
+        CCMenuItem *exitGame = [CCMenuItemFont itemWithString:@"exit" target:self selector:@selector(exitGame:)];
+
+		CCMenu *menu = [CCMenu menuWithItems:start,option,aboutUs,exitGame, nil];
+		
+>>>>>>> master
 		[menu alignItemsVerticallyWithPadding:20];
 		[menu setPosition:ccp( size.width/2, size.height/2 - 50)];
         
@@ -110,8 +126,11 @@
 }
 -(void) option:(id)sender
 {
+<<<<<<< HEAD
     NSLog(@"option");
+=======
     [[CCDirector sharedDirector]replaceScene:[RankScene scene]];
+>>>>>>> master
 }
 -(void) aboutUs:(id)sender
 {

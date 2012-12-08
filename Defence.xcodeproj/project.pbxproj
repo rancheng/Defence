@@ -152,13 +152,16 @@
 		02D1CBDB164E9292003A031E /* WarShip.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D1CBDA164E9292003A031E /* WarShip.m */; };
 		02D1CBDE164E94F3003A031E /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D1CBDD164E94F3003A031E /* GameLayer.m */; };
 		02D1CC0C164EB29F003A031E /* mainBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02D1CC0B164EB29F003A031E /* mainBackground.jpg */; };
+<<<<<<< HEAD
 		02DEF9F8166A408D00AAF118 /* blank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02DEF9F7166A408D00AAF118 /* blank.jpg */; };
 		02F6A706166A647100670D57 /* MyParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F6A705166A647100670D57 /* MyParticle.m */; };
 		02F6A709166A67C400670D57 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F6A708166A67C400670D57 /* fire.png */; };
+=======
 		A410D25A16735154006963E3 /* RankData.m in Sources */ = {isa = PBXBuildFile; fileRef = A410D25916735154006963E3 /* RankData.m */; };
 		A410D25E1673518C006963E3 /* RankScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A410D25D1673518C006963E3 /* RankScene.m */; };
 		A410D2611673541D006963E3 /* MyFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A410D2601673541D006963E3 /* MyFileManager.m */; };
 		A4EA12A31671FB0800ADABD5 /* RecordInfor.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EA12A21671FB0800ADABD5 /* RecordInfor.m */; };
+>>>>>>> master
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -453,10 +456,12 @@
 		02D1CBDC164E94F3003A031E /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
 		02D1CBDD164E94F3003A031E /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 		02D1CC0B164EB29F003A031E /* mainBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mainBackground.jpg; path = Resources/mainBackground.jpg; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		02DEF9F7166A408D00AAF118 /* blank.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = blank.jpg; path = Resources/image/blank.jpg; sourceTree = "<group>"; };
 		02F6A704166A647100670D57 /* MyParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyParticle.h; sourceTree = "<group>"; };
 		02F6A705166A647100670D57 /* MyParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyParticle.m; sourceTree = "<group>"; };
 		02F6A708166A67C400670D57 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = Resources/fire.png; sourceTree = "<group>"; };
+=======
 		A410D25816735154006963E3 /* RankData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankData.h; sourceTree = "<group>"; };
 		A410D25916735154006963E3 /* RankData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankData.m; sourceTree = "<group>"; };
 		A410D25C1673518C006963E3 /* RankScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankScene.h; sourceTree = "<group>"; };
@@ -465,6 +470,7 @@
 		A410D2601673541D006963E3 /* MyFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFileManager.m; sourceTree = "<group>"; };
 		A4EA12A11671FB0800ADABD5 /* RecordInfor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordInfor.h; sourceTree = "<group>"; };
 		A4EA12A21671FB0800ADABD5 /* RecordInfor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordInfor.m; sourceTree = "<group>"; };
+>>>>>>> master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -523,12 +529,14 @@
 		02413189164E865400FBD286 /* Defence */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				021CC909167232E40031AC87 /* 一定要先看看我 */,
 				029BCA35166CD3F0004471BA /* Other暂定为杨&夏 */,
 				029BCA34166CD36D004471BA /* multiPlayer刘 */,
 				029BCA32166CD2B7004471BA /* touch&Effort杨&夏 */,
 				02804BB51661133300CD38BA /* enermy亓 */,
 				029BCA33166CD2F1004471BA /* gameProcessor程 */,
+=======
 				02CFF99B164E8A6F00035B59 /* StartLayer.h */,
 				02CFF99C164E8A6F00035B59 /* StartLayer.m */,
 				A410D25816735154006963E3 /* RankData.h */,
@@ -545,16 +553,19 @@
 				02D1CBDD164E94F3003A031E /* GameLayer.m */,
 				02413301164E865C00FBD286 /* AppDelegate.h */,
 				02413302164E865C00FBD286 /* AppDelegate.m */,
+>>>>>>> master
 				02413304164E865C00FBD286 /* HelloWorldLayer.h */,
 				02413305164E865C00FBD286 /* HelloWorldLayer.m */,
 				0241318A164E865400FBD286 /* Resources */,
 				024131A4164E865500FBD286 /* libs */,
 				024132FD164E865C00FBD286 /* Supporting Files */,
+<<<<<<< HEAD
 =======
 				A4EA12A11671FB0800ADABD5 /* RecordInfor.h */,
 				A4EA12A21671FB0800ADABD5 /* RecordInfor.m */,
 				A410D25F1673541D006963E3 /* MyFileManager.h */,
 				A410D2601673541D006963E3 /* MyFileManager.m */,
+>>>>>>> master
 			);
 			path = Defence;
 			sourceTree = "<group>";
@@ -1187,15 +1198,18 @@
 				02D1CBD8164E9225003A031E /* ShipsLayer.m in Sources */,
 				02D1CBDB164E9292003A031E /* WarShip.m in Sources */,
 				02D1CBDE164E94F3003A031E /* GameLayer.m in Sources */,
+<<<<<<< HEAD
 				02804BAC1660EEBC00CD38BA /* enemy.m in Sources */,
 				02804BB41661054A00CD38BA /* fightLayer.m in Sources */,
 				02F6A706166A647100670D57 /* MyParticle.m in Sources */,
 				024B6DE4166C3C09006EF8E2 /* Angle.m in Sources */,
 				021CC910167247FE0031AC87 /* EnemyNumberDef.m in Sources */,
+=======
 				A4EA12A31671FB0800ADABD5 /* RecordInfor.m in Sources */,
 				A410D25A16735154006963E3 /* RankData.m in Sources */,
 				A410D25E1673518C006963E3 /* RankScene.m in Sources */,
 				A410D2611673541D006963E3 /* MyFileManager.m in Sources */,
+>>>>>>> master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
