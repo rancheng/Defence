@@ -25,4 +25,5 @@
 -(void)start:(id)sender;
 -(void)option:(id)sender;
 -(void)aboutUs:(id)sender;
+-(void)exitGame:(id)sender;
 @end
