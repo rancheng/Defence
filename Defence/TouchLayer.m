@@ -20,19 +20,28 @@
 //
 
 #import "TouchLayer.h"
-
-
+#import "CCParticleExamples.h"
+#import "MyParticle.h"
 @implementation TouchLayer
 -(id)init
 {
     if(self = [super init])
     {
+        ccColor3B color;
+        color.r = 0;color.g = 0; color.b = 0;
+        
         CCLabelTTF *label = [CCLabelTTF labelWithString:@"touch me" fontName:@"Marker Felt"     fontSize:50];
         CGSize size = [[CCDirector sharedDirector] winSize];
-        
+        label.color = color;
         label.position = CGPointMake(size.width/2, size.height/2);
         [self addChild:label];
-        label.tag = 1;			
+        label.tag = 1;
+        
+        
+        t = [[[CCParticleMeteor alloc]init]autorelease];
+        t.gravity = ccp(90, -200);
+        
+        [self addChild:t];
         self.isTouchEnabled = YES;
     }
     return self;
@@ -47,19 +56,29 @@
 -(void) ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     CGPoint where = [self locationFromTouches:touches];
+    lastLocation = where;
+//    MyParticle * particle = [[[MyParticle alloc]init]autorelease];
+//    particle.positionType = kCCPositionTypeFree;
+//   particle.position = where;
+//    [self addChild:particle z:1];
     
-    CCParticleSystem* particle = [CCParticleSystemQuad particleWithFile:@"pp.plist"];
-    particle.positionType = kCCPositionTypeFree;
-    particle.position = where;
-    [self addChild:particle z:1];
+    t.position = where;
 }
 -(void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
 {
     CGPoint where = [self locationFromTouches:touches];
+    CGPoint moveTo = ccpSub(where, lastLocation);
+    moveTo = ccpMult(moveTo, 0.1);
+ //   CCLabelTTF *label = (CCLabelTTF*)[self getChildByTag:1];
+ //   label.position = ccpAdd(label.position, moveTo);
+   // CCParticleSystem* particle = [CCParticleSystemQuad particleWithFile:@"pp.plist"];
+// MyParticle * particle = [[[MyParticle  alloc]init]autorelease];
     
-    CCParticleSystem* particle = [CCParticleSystemQuad particleWithFile:@"pp.plist"];
-    particle.positionType = kCCPositionTypeFree;
-    particle.position = where;
-    [self addChild:particle z:1];
+ //   CCParticleSmoke *particle = [[[CCParticleSmoke alloc]init]autorelease];
+ //   particle.positionType = kCCPositionTypeFree;
+ //   particle.position = where;
+  //  [self addChild:particle z:1];
+    
+    t.position = where;
 }
 @end

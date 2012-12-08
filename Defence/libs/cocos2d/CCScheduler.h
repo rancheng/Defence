@@ -167,7 +167,7 @@ struct _hashUpdateEntry;
 -(void) unscheduleSelector:(SEL)selector forTarget:(id)target;
 
 /** Unschedules the update selector for a given target
- @since v0.99.3
+ @since v0.99.3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
  */
 -(void) unscheduleUpdateForTarget:(id)target;
 
@@ -207,7 +207,7 @@ struct _hashUpdateEntry;
 /** Returns whether or not the target is paused
  @since v1.0.0
  */
--(BOOL) isTargetPaused:(id)target;
+-(BOOL) isTargetPaused:(id)target;                                                                                                                                                                                                                                                    
 
 /** Pause all selectors from all targets.
   You should NEVER call this method, unless you know what you are doing.

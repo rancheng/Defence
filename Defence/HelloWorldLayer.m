@@ -53,21 +53,7 @@
 		// add the label as a child to this Layer
 		[self addChild: label];
 		
-		UIPinchGestureRecognizer *gestureRecognizer = [[[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinchFrom:)] autorelease];
-        [[[CCDirector sharedDirector] openGLView] addGestureRecognizer:gestureRecognizer];
-        
-        UIPanGestureRecognizer *gestureRecognizer1 = [[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanFrom:)] autorelease];
-        [[[CCDirector sharedDirector] openGLView] addGestureRecognizer:gestureRecognizer1];
-        
-        backGround = [CCSprite spriteWithFile:@"ground.jpg"];
-        
-		size = [[CCDirector sharedDirector] winSize];
-        
-        self.anchorPoint = CGPointZero;
-		self.position =  CGPointZero;
-        backGround.position = ccp( size.width /2 , size.height/2 );
 		
-		[self addChild: backGround];
 		
 		//
 		// Leaderboards and Achievements
@@ -128,65 +114,6 @@
 	// don't forget to call "super dealloc"
 	[super dealloc];
 }
-#pragma Guesture recognizer
--(CGRect) rectOfPositionAllow
-{
-    CGRect theRect;
-    theRect.origin.x = size.width - self.boundingBox.size.width;
-    theRect.origin.y = size.height - self.boundingBox.size.height;
-    theRect.size.width = abs(size.width - self.boundingBox.size.width);
-    theRect.size.height = abs(size.height - self.boundingBox.size.height);
-    return theRect;
-}
-
-
--(void) handlePinchFrom:(UIPinchGestureRecognizer*)recognizer
-{
-    if([recognizer state] == UIGestureRecognizerStateBegan)
-    {
-        lastScale = self.scale;
-    }
-    float nowScale;
-    nowScale = (lastScale - 1) + recognizer.scale;
-    nowScale = MIN(nowScale,2);
-    nowScale = MAX(nowScale,1);
-    
-    allowRect = [self rectOfPositionAllow];
-    
-    if (lastScale > nowScale)
-    {
-        
-        CGPoint newPosition =  ccpSub(self.position, ccpMult ( ccpNormalize(self.position) ,ccpLength(self.position) *(lastScale - nowScale)/(lastScale - 1))) ;
-        if (CGRectContainsPoint(allowRect, newPosition))
-        {
-            self.position = newPosition;
-        }
-    }
-    self.scale = nowScale;
-}
-
-- (void)handlePanFrom:(UIPanGestureRecognizer *)recognizer
-{
-    
-    if (recognizer.state == UIGestureRecognizerStateBegan)
-    {
-        lastPosition = self.position;
-        
-    } else if (recognizer.state == UIGestureRecognizerStateChanged)
-    {
-        
-        CGPoint translation = [recognizer translationInView:recognizer.view];
-        translation = ccp(translation.x, -translation.y);
-        translation = ccpMult(translation, 0.7f);
-        CGPoint newPos = ccpAdd(lastPosition, translation);
-        if (CGRectContainsPoint(allowRect, newPos))
-        {
-            self.position = newPos;
-        }
-        
-    }
-}
-
 
 #pragma mark GameKit delegate
 

@@ -35,7 +35,7 @@
 /** sets Color
  @since v0.8
  */
--(void) setColor:(ccColor3B)color;
+-(void) setColor:(ccColor3B)color; 
 /** returns the color
  @since v0.8
  */

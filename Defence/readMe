@@ -1,5 +1,0 @@
-这只是一个初步的架构，各人根据自己的责任进行添加和删除，
-亓：shipsLayer  ship
-夏，杨：TouchLayer
-刘：gamecenter, rank list
-程：GameLayer&GameScene

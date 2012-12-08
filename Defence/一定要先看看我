@@ -1,0 +1,31 @@
+这只是一个初步的架构，各人根据自己的责任进行添加和删除，
+亓：shipsLayer  ship
+夏，杨：TouchLayer
+刘：openFeint
+程：GameLayer&GameScene
+
+大家要积极一些呀！！
+
+亓
+记录于 2012.12.2。 派出第六集团军大半，联合全部第七集团军，外加第一集团军三个师团的新兵参加enemy.m战役
+我军全军覆没。敌军伤亡不过10%。
+
+亓
+2012.12.6
+地图的大小不要从director里要，从GameLayer里要。用[[GameLayer shardGameLayer]mapsize]来获取地图大小
+因为我们要做一个地图比屏幕大的。
+
+
+程冉先做好地图还有控制武器。我做好AI后，由gamelayer来定制shipsLayer。
+因为
+- Some nodes, like CCParallaxNode, CCParticle uses world node coordinates, and they won't work properly if you move them (or any of their ancestors)
+       using the camera.
+
+     - It doesn't work on batched nodes like CCSprite objects when they are parented to a CCSpriteBatchNode object.
+
+	 - It is recommended to use it ONLY if you are going to create 3D effects. For 2D effecs, use the action CCFollow or position/scale/rotate.
+这些原因，程冉想一下可不可以不用ccCamera的实现方法
+
+
+夏&杨先做出好看的粒子，如果想让粒子的尾巴朝向不同的方向，改动gravity就可以。
+self.blendAdditive = YES;这一句貌似是颜色翻转的意思

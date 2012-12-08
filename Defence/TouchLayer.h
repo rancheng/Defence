@@ -9,8 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "CCTouchDispatcher.h"
+#import "CCParticleExamples.h"
+
+
 @interface TouchLayer : CCLayer {
-    
+    CGPoint lastLocation;
+    CCParticleMeteor * t;
 }
 -(id)init;
 -(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;

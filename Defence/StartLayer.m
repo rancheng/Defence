@@ -8,7 +8,6 @@
 
 #import "StartLayer.h"
 #import "GameLayer.h"
-#import "RankList.h"
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
@@ -49,31 +48,39 @@
             background = [CCSprite spriteWithFile:@"Default.png"];
             background.rotation = 90;
         } else {
-            background = [CCSprite spriteWithFile:@"mainBackground.jpg"];
+            background = [CCSprite spriteWithFile:@"blank.jpg"];
         }
         background.position = ccp(size.width/2, size.height/2);
         [self addChild: background];
         
         
+        ccColor3B color;
+        color.r = 0;color.g = 0; color.b = 0;
         
-		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Earth Defence" fontName:@"Marker Felt" fontSize:64];
-
+        
+		CCLabelTTF  *label = [CCLabelTTF labelWithString:@"Defence" fontName:@"MarKer Felt" fontSize:64];
 		label.position =  ccp( size.width /2 , size.height/2 + 200 );
-		[self addChild: label];
+        label.color = color;
+        [self addChild: label];
 		
         
         
 		[CCMenuItemFont setFontSize:28];
-		
+
         
 		CCMenuItem *start = [CCMenuItemFont itemWithString:@"start" target:self selector:@selector(start:)];
         CCMenuItem *option = [CCMenuItemFont itemWithString:@"option" target:self selector:@selector(option:)];
         CCMenuItem *aboutUs = [CCMenuItemFont itemWithString:@"about us" target:self selector:@selector(aboutUs:)];
+      
+        
 		CCMenu *menu = [CCMenu menuWithItems:start,option,aboutUs, nil];
-		
+
+        
 		[menu alignItemsVerticallyWithPadding:20];
 		[menu setPosition:ccp( size.width/2, size.height/2 - 50)];
-		
+        
+		[menu setColor:color];
+    
 		// Add the menu to the layer
 		[self addChild:menu];
         
@@ -98,7 +105,7 @@
 }
 -(void) option:(id)sender
 {
-    [[CCDirector sharedDirector]replaceScene:[RankList scene]];
+    NSLog(@"option");
 }
 -(void) aboutUs:(id)sender
 {

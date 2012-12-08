@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021CC90A167232E40031AC87 /* 一定要先看看我 in Resources */ = {isa = PBXBuildFile; fileRef = 021CC909167232E40031AC87 /* 一定要先看看我 */; };
+		021CC910167247FE0031AC87 /* EnemyNumberDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 021CC90F167247FE0031AC87 /* EnemyNumberDef.m */; };
 		02413178164E865400FBD286 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02413177164E865400FBD286 /* QuartzCore.framework */; };
 		0241317A164E865400FBD286 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02413179164E865400FBD286 /* OpenGLES.framework */; };
 		0241317C164E865400FBD286 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0241317B164E865400FBD286 /* OpenAL.framework */; };
@@ -133,20 +135,32 @@
 		02413303164E865C00FBD286 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02413302164E865C00FBD286 /* AppDelegate.m */; };
 		02413306164E865C00FBD286 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02413305164E865C00FBD286 /* HelloWorldLayer.m */; };
 		02413309164E865C00FBD286 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02413308164E865C00FBD286 /* IntroLayer.m */; };
+		0249868E166B1120006EE604 /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0249868D166B1120006EE604 /* white.jpg */; };
+		024B6DE4166C3C09006EF8E2 /* Angle.m in Sources */ = {isa = PBXBuildFile; fileRef = 024B6DE3166C3C09006EF8E2 /* Angle.m */; };
 		02626F2B164FDD5100FFD284 /* pp.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02626F2A164FDD5100FFD284 /* pp.plist */; };
+		02804BAC1660EEBC00CD38BA /* enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02804BAB1660EEBC00CD38BA /* enemy.m */; };
+		02804BB11661012600CD38BA /* enemyShip1.png in Resources */ = {isa = PBXBuildFile; fileRef = 02804BB01661012600CD38BA /* enemyShip1.png */; };
+		02804BB41661054A00CD38BA /* fightLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02804BB31661054A00CD38BA /* fightLayer.m */; };
+		029BCA28166CD241004471BA /* enermyShip3.png in Resources */ = {isa = PBXBuildFile; fileRef = 029BCA27166CD241004471BA /* enermyShip3.png */; };
+		029BCA2E166CD254004471BA /* ship1.png in Resources */ = {isa = PBXBuildFile; fileRef = 029BCA2A166CD254004471BA /* ship1.png */; };
+		029BCA2F166CD254004471BA /* ship2.png in Resources */ = {isa = PBXBuildFile; fileRef = 029BCA2B166CD254004471BA /* ship2.png */; };
+		029BCA30166CD254004471BA /* ship3.png in Resources */ = {isa = PBXBuildFile; fileRef = 029BCA2C166CD254004471BA /* ship3.png */; };
+		029BCA31166CD254004471BA /* ship4.png in Resources */ = {isa = PBXBuildFile; fileRef = 029BCA2D166CD254004471BA /* ship4.png */; };
 		02CFF99D164E8A6F00035B59 /* StartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CFF99C164E8A6F00035B59 /* StartLayer.m */; };
 		02CFF9A7164E902600035B59 /* TouchLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CFF9A6164E902600035B59 /* TouchLayer.m */; };
 		02D1CBD8164E9225003A031E /* ShipsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D1CBD7164E9225003A031E /* ShipsLayer.m */; };
 		02D1CBDB164E9292003A031E /* WarShip.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D1CBDA164E9292003A031E /* WarShip.m */; };
 		02D1CBDE164E94F3003A031E /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D1CBDD164E94F3003A031E /* GameLayer.m */; };
-		02D1CBE0164E96DE003A031E /* readMe in Resources */ = {isa = PBXBuildFile; fileRef = 02D1CBDF164E96DE003A031E /* readMe */; };
 		02D1CC0C164EB29F003A031E /* mainBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02D1CC0B164EB29F003A031E /* mainBackground.jpg */; };
-		A4EA129F1671FAAB00ADABD5 /* RankList.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EA129E1671FAAB00ADABD5 /* RankList.m */; };
-		A4EA12A31671FB0800ADABD5 /* RecordInfor.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EA12A21671FB0800ADABD5 /* RecordInfor.m */; };
-		F6A4B4EB1672E9C0007EA9CA /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4B4EA1672E9C0007EA9CA /* RootViewController.m */; };
+		02DEF9F8166A408D00AAF118 /* blank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02DEF9F7166A408D00AAF118 /* blank.jpg */; };
+		02F6A706166A647100670D57 /* MyParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F6A705166A647100670D57 /* MyParticle.m */; };
+		02F6A709166A67C400670D57 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F6A708166A67C400670D57 /* fire.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		021CC909167232E40031AC87 /* 一定要先看看我 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "一定要先看看我"; sourceTree = "<group>"; };
+		021CC90E167247FE0031AC87 /* EnemyNumberDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyNumberDef.h; sourceTree = "<group>"; };
+		021CC90F167247FE0031AC87 /* EnemyNumberDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnemyNumberDef.m; sourceTree = "<group>"; };
 		02413173164E865400FBD286 /* Defence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Defence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02413177164E865400FBD286 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		02413179164E865400FBD286 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -409,7 +423,21 @@
 		02413305164E865C00FBD286 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		02413307164E865C00FBD286 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		02413308164E865C00FBD286 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		0249868D166B1120006EE604 /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = white.jpg; path = Resources/white.jpg; sourceTree = "<group>"; };
+		0249869D166B43E3006EE604 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		024B6DE2166C3C09006EF8E2 /* Angle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Angle.h; sourceTree = "<group>"; };
+		024B6DE3166C3C09006EF8E2 /* Angle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Angle.m; sourceTree = "<group>"; };
 		02626F2A164FDD5100FFD284 /* pp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = pp.plist; path = Resources/pp.plist; sourceTree = "<group>"; };
+		02804BAA1660EEBC00CD38BA /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
+		02804BAB1660EEBC00CD38BA /* enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = enemy.m; sourceTree = "<group>"; };
+		02804BB01661012600CD38BA /* enemyShip1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = enemyShip1.png; path = Resources/image/enemyShip1.png; sourceTree = "<group>"; };
+		02804BB21661054A00CD38BA /* fightLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fightLayer.h; sourceTree = "<group>"; };
+		02804BB31661054A00CD38BA /* fightLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fightLayer.m; sourceTree = "<group>"; };
+		029BCA27166CD241004471BA /* enermyShip3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = enermyShip3.png; path = Resources/image/enermyShip3.png; sourceTree = "<group>"; };
+		029BCA2A166CD254004471BA /* ship1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship1.png; path = Resources/image/ship1.png; sourceTree = "<group>"; };
+		029BCA2B166CD254004471BA /* ship2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship2.png; path = Resources/image/ship2.png; sourceTree = "<group>"; };
+		029BCA2C166CD254004471BA /* ship3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship3.png; path = Resources/image/ship3.png; sourceTree = "<group>"; };
+		029BCA2D166CD254004471BA /* ship4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship4.png; path = Resources/image/ship4.png; sourceTree = "<group>"; };
 		02CFF99B164E8A6F00035B59 /* StartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartLayer.h; sourceTree = "<group>"; };
 		02CFF99C164E8A6F00035B59 /* StartLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartLayer.m; sourceTree = "<group>"; };
 		02CFF9A5164E902600035B59 /* TouchLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchLayer.h; sourceTree = "<group>"; };
@@ -420,15 +448,11 @@
 		02D1CBDA164E9292003A031E /* WarShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarShip.m; sourceTree = "<group>"; };
 		02D1CBDC164E94F3003A031E /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
 		02D1CBDD164E94F3003A031E /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
-		02D1CBDF164E96DE003A031E /* readMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readMe; sourceTree = "<group>"; };
 		02D1CC0B164EB29F003A031E /* mainBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mainBackground.jpg; path = Resources/mainBackground.jpg; sourceTree = "<group>"; };
-		A4EA129D1671FAAB00ADABD5 /* RankList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankList.h; sourceTree = "<group>"; };
-		A4EA129E1671FAAB00ADABD5 /* RankList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankList.m; sourceTree = "<group>"; };
-		A4EA12A11671FB0800ADABD5 /* RecordInfor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordInfor.h; sourceTree = "<group>"; };
-		A4EA12A21671FB0800ADABD5 /* RecordInfor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordInfor.m; sourceTree = "<group>"; };
-		F6A4B4E91672E9C0007EA9CA /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		F6A4B4EA1672E9C0007EA9CA /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		F6A4B4EC1672EBC3007EA9CA /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
+		02DEF9F7166A408D00AAF118 /* blank.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = blank.jpg; path = Resources/image/blank.jpg; sourceTree = "<group>"; };
+		02F6A704166A647100670D57 /* MyParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyParticle.h; sourceTree = "<group>"; };
+		02F6A705166A647100670D57 /* MyParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyParticle.m; sourceTree = "<group>"; };
+		02F6A708166A67C400670D57 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = Resources/fire.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -487,30 +511,14 @@
 		02413189164E865400FBD286 /* Defence */ = {
 			isa = PBXGroup;
 			children = (
-				02CFF99B164E8A6F00035B59 /* StartLayer.h */,
-				02CFF99C164E8A6F00035B59 /* StartLayer.m */,
-				02CFF9A5164E902600035B59 /* TouchLayer.h */,
-				02CFF9A6164E902600035B59 /* TouchLayer.m */,
-				02D1CBD6164E9225003A031E /* ShipsLayer.h */,
-				F6A4B4E91672E9C0007EA9CA /* RootViewController.h */,
-				F6A4B4EA1672E9C0007EA9CA /* RootViewController.m */,
-				02D1CBD7164E9225003A031E /* ShipsLayer.m */,
-				02D1CBD9164E9292003A031E /* WarShip.h */,
-				02D1CBDA164E9292003A031E /* WarShip.m */,
-				02D1CBDC164E94F3003A031E /* GameLayer.h */,
-				02D1CBDD164E94F3003A031E /* GameLayer.m */,
-				02413301164E865C00FBD286 /* AppDelegate.h */,
-				02413302164E865C00FBD286 /* AppDelegate.m */,
+				021CC909167232E40031AC87 /* 一定要先看看我 */,
+				029BCA35166CD3F0004471BA /* Other暂定为杨&夏 */,
+				029BCA34166CD36D004471BA /* multiPlayer刘 */,
+				029BCA32166CD2B7004471BA /* touch&Effort杨&夏 */,
+				02804BB51661133300CD38BA /* enermy亓 */,
+				029BCA33166CD2F1004471BA /* gameProcessor程 */,
 				02413304164E865C00FBD286 /* HelloWorldLayer.h */,
 				02413305164E865C00FBD286 /* HelloWorldLayer.m */,
-				F6A4B4EC1672EBC3007EA9CA /* GameConfig.h */,
-				A4EA129D1671FAAB00ADABD5 /* RankList.h */,
-				A4EA12A11671FB0800ADABD5 /* RecordInfor.h */,
-				A4EA12A21671FB0800ADABD5 /* RecordInfor.m */,
-				A4EA129E1671FAAB00ADABD5 /* RankList.m */,
-				02413307164E865C00FBD286 /* IntroLayer.h */,
-				02413308164E865C00FBD286 /* IntroLayer.m */,
-				02D1CBDF164E96DE003A031E /* readMe */,
 				0241318A164E865400FBD286 /* Resources */,
 				024131A4164E865500FBD286 /* libs */,
 				024132FD164E865C00FBD286 /* Supporting Files */,
@@ -521,6 +529,15 @@
 		0241318A164E865400FBD286 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				029BCA2A166CD254004471BA /* ship1.png */,
+				029BCA2B166CD254004471BA /* ship2.png */,
+				029BCA2C166CD254004471BA /* ship3.png */,
+				029BCA2D166CD254004471BA /* ship4.png */,
+				029BCA27166CD241004471BA /* enermyShip3.png */,
+				0249868D166B1120006EE604 /* white.jpg */,
+				02F6A708166A67C400670D57 /* fire.png */,
+				02DEF9F7166A408D00AAF118 /* blank.jpg */,
+				02804BB01661012600CD38BA /* enemyShip1.png */,
 				02626F2A164FDD5100FFD284 /* pp.plist */,
 				02D1CC0B164EB29F003A031E /* mainBackground.jpg */,
 				0241318B164E865400FBD286 /* Default.png */,
@@ -883,6 +900,66 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		02804BB51661133300CD38BA /* enermy亓 */ = {
+			isa = PBXGroup;
+			children = (
+				0249869D166B43E3006EE604 /* Define.h */,
+				02D1CBD6164E9225003A031E /* ShipsLayer.h */,
+				02D1CBD7164E9225003A031E /* ShipsLayer.m */,
+				02D1CBD9164E9292003A031E /* WarShip.h */,
+				02D1CBDA164E9292003A031E /* WarShip.m */,
+				02804BAA1660EEBC00CD38BA /* Enemy.h */,
+				02804BAB1660EEBC00CD38BA /* enemy.m */,
+				024B6DE2166C3C09006EF8E2 /* Angle.h */,
+				024B6DE3166C3C09006EF8E2 /* Angle.m */,
+				021CC90E167247FE0031AC87 /* EnemyNumberDef.h */,
+				021CC90F167247FE0031AC87 /* EnemyNumberDef.m */,
+			);
+			name = "enermy亓";
+			sourceTree = "<group>";
+		};
+		029BCA32166CD2B7004471BA /* touch&Effort杨&夏 */ = {
+			isa = PBXGroup;
+			children = (
+				02CFF9A5164E902600035B59 /* TouchLayer.h */,
+				02CFF9A6164E902600035B59 /* TouchLayer.m */,
+				02F6A704166A647100670D57 /* MyParticle.h */,
+				02F6A705166A647100670D57 /* MyParticle.m */,
+			);
+			name = "touch&Effort杨&夏";
+			sourceTree = "<group>";
+		};
+		029BCA33166CD2F1004471BA /* gameProcessor程 */ = {
+			isa = PBXGroup;
+			children = (
+				02804BB21661054A00CD38BA /* fightLayer.h */,
+				02804BB31661054A00CD38BA /* fightLayer.m */,
+				02D1CBDC164E94F3003A031E /* GameLayer.h */,
+				02D1CBDD164E94F3003A031E /* GameLayer.m */,
+			);
+			name = "gameProcessor程";
+			sourceTree = "<group>";
+		};
+		029BCA34166CD36D004471BA /* multiPlayer刘 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "multiPlayer刘";
+			sourceTree = "<group>";
+		};
+		029BCA35166CD3F0004471BA /* Other暂定为杨&夏 */ = {
+			isa = PBXGroup;
+			children = (
+				02413307164E865C00FBD286 /* IntroLayer.h */,
+				02413308164E865C00FBD286 /* IntroLayer.m */,
+				02CFF99B164E8A6F00035B59 /* StartLayer.h */,
+				02CFF99C164E8A6F00035B59 /* StartLayer.m */,
+				02413301164E865C00FBD286 /* AppDelegate.h */,
+				02413302164E865C00FBD286 /* AppDelegate.m */,
+			);
+			name = "Other暂定为杨&夏";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -946,9 +1023,18 @@
 				024131A0164E865500FBD286 /* Icon@2x.png in Resources */,
 				024131A3164E865500FBD286 /* iTunesArtwork in Resources */,
 				024132E1164E865B00FBD286 /* ChangeLog in Resources */,
-				02D1CBE0164E96DE003A031E /* readMe in Resources */,
 				02D1CC0C164EB29F003A031E /* mainBackground.jpg in Resources */,
 				02626F2B164FDD5100FFD284 /* pp.plist in Resources */,
+				02804BB11661012600CD38BA /* enemyShip1.png in Resources */,
+				02DEF9F8166A408D00AAF118 /* blank.jpg in Resources */,
+				02F6A709166A67C400670D57 /* fire.png in Resources */,
+				0249868E166B1120006EE604 /* white.jpg in Resources */,
+				029BCA28166CD241004471BA /* enermyShip3.png in Resources */,
+				029BCA2E166CD254004471BA /* ship1.png in Resources */,
+				029BCA2F166CD254004471BA /* ship2.png in Resources */,
+				029BCA30166CD254004471BA /* ship3.png in Resources */,
+				029BCA31166CD254004471BA /* ship4.png in Resources */,
+				021CC90A167232E40031AC87 /* 一定要先看看我 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1068,9 +1154,11 @@
 				02D1CBD8164E9225003A031E /* ShipsLayer.m in Sources */,
 				02D1CBDB164E9292003A031E /* WarShip.m in Sources */,
 				02D1CBDE164E94F3003A031E /* GameLayer.m in Sources */,
-				A4EA129F1671FAAB00ADABD5 /* RankList.m in Sources */,
-				A4EA12A31671FB0800ADABD5 /* RecordInfor.m in Sources */,
-				F6A4B4EB1672E9C0007EA9CA /* RootViewController.m in Sources */,
+				02804BAC1660EEBC00CD38BA /* enemy.m in Sources */,
+				02804BB41661054A00CD38BA /* fightLayer.m in Sources */,
+				02F6A706166A647100670D57 /* MyParticle.m in Sources */,
+				024B6DE4166C3C09006EF8E2 /* Angle.m in Sources */,
+				021CC910167247FE0031AC87 /* EnemyNumberDef.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
